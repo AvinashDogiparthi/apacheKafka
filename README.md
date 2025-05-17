@@ -15,12 +15,13 @@ Step 3 : Start the kafka environment
     * bin/kafka-storage.sh format --standalone -t $KAFKA_CLUSTER_ID -c config/server.properties
     * Start the Kafka Server : bin/kafka-server-start.sh config/server.properties
 
-Whenever you want to deploy kafka whenever you need everytime you have to run below commands to start kafka server
+Whenever you want to deploy kafka everytime you need everytime you have to run below commands to start kafka server
 * export KAFKA_LOG4J_OPTS="-Dlog4j.configurationFile=file:///C:/kafka_2.13-4.0.0/config/tools-log4j2.yaml"
 * bin/kafka-server-start.sh config/server.properties
 
 Once the Kafka server has successfully launched, you will have a basic Kafka environment running and ready to use.
 
+To check whether kafka is running : netstat -an | findstr 9092 --> Run this in command line
 
 Step 4 : Setup topic
 * Open one more git bash terminal and execute --> export KAFKA_LOG4J_OPTS="-Dlog4j.configurationFile=file:///C:/kafka_2.13-4.0.0/config/tools-log4j2.yaml"
