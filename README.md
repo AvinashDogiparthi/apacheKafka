@@ -27,3 +27,8 @@ Step 4 : Setup topic
 * Open one more git bash terminal and execute --> export KAFKA_LOG4J_OPTS="-Dlog4j.configurationFile=file:///C:/kafka_2.13-4.0.0/config/tools-log4j2.yaml"
 * Execute below command to create a topic :
     * bin/kafka-topics.sh --create --topic newCustomTopic --bootstrap-server localhost:9092
+
+
+Step 5 : To check messages that we published under a topic 
+
+Execute -> $ bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
