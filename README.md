@@ -1,7 +1,6 @@
 Step 1: Get Kafka
 * Download Link : https://www.apache.org/dyn/closer.cgi?path=/kafka/4.0.0/kafka_2.13-4.0.0.tgz
 
-
 Step 2 : Open Terminal and do execute
 * tar -xzf kafka_2.13-4.0.0.tgz
 * cd kafka_2.13-4.0.0
@@ -20,7 +19,6 @@ Whenever you want to deploy kafka everytime you need everytime you have to run b
 * bin/kafka-server-start.sh config/server.properties
 
 Once the Kafka server has successfully launched, you will have a basic Kafka environment running and ready to use.
-
 To check whether kafka is running : netstat -an | findstr 9092 --> Run this in command line
 
 Step 4 : Setup topic
@@ -30,5 +28,4 @@ Step 4 : Setup topic
 
 
 Step 5 : To check messages that we published under a topic 
-
 Execute -> $ bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
